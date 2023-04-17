@@ -16,6 +16,8 @@
 .scrollLink{
     font-size: 1.5vw;
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black
 }
 
 .linksContainer{

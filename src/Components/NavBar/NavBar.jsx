@@ -9,16 +9,16 @@ export default function NavBar() {
   return (
     <div className={style.container}>
       <div className={style.scrollLinks}>
-        <a className={style.scrollLink}>
+        <a href="#skills" className={style.scrollLink}>
           Skills
         </a>
-        <a className={style.scrollLink}>
+        <a href="#projects" className={style.scrollLink}>
           Projects
         </a>
-        <a className={style.scrollLink}>
+        <a href="#about" className={style.scrollLink}>
           About
         </a>
-        <a className={style.scrollLink}>
+        <a href="#contact" className={style.scrollLink}>
           Contact
         </a>
       </div>
