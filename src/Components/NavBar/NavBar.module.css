@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: end;
+}
+
+.navbarImages{
+    margin-top: 1vw;
+    margin-right: 3vw;
+    height: 2vw;
+    width: 2vw;
+}
+
+.link{
+    margin-right: 3vw;
+    height: 2vw;
+    width: 2vw;
+}
