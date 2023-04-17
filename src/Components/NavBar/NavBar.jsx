@@ -1,4 +1,5 @@
 import style from "./NavBar.module.css";
+import { Link } from "react-router-dom";
 import LINKEDIN from "../../Media/linkedin.svg";
 import GITHUB from "../../Media/github.svg";
 import RESUME from "../../Media/resume.svg";
