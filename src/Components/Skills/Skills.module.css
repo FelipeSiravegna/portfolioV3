@@ -1,0 +1,47 @@
+.container{
+    width: 100%;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: blue;
+    font-size: 3.5vw;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+}
+
+.insideContainer{
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 6vw;
+    border-bottom: 0.5vw dotted black;
+}
+
+.skillsContainer{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5vw;
+}
+
+.skill{
+    display: flex;
+    gap: 1vw;
+    text-align: center;
+    justify-content: flex-start;
+    height: 2.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.skillName{
+    margin-top: 0.5vw;
+}
+
+.skillLogo{
+    height: 2.5vw;
+    width: 2.5vw;
+}
