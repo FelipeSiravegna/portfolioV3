@@ -2,85 +2,71 @@ import style from "./Skills.module.css";
 import NODEJS from "../../Media/Skills/nodejs.svg";
 import EXPRESS from "../../Media/Skills/express.svg";
 import POSTGRESQL from "../../Media/Skills/postgresql.svg";
-import SEQUELIZE from '../../Media/Skills/sequelize.svg'
-import HTML from '../../Media/Skills/html.svg'
-import CSS from '../../Media/Skills/css.svg'
-import JAVASCRIPT from '../../Media/Skills/javascript.svg'
+import SEQUELIZE from "../../Media/Skills/sequelize.svg";
+import HTML from "../../Media/Skills/html.svg";
+import CSS from "../../Media/Skills/css.svg";
+import JAVASCRIPT from "../../Media/Skills/javascript.svg";
 import REACT from "../../Media/Skills/react.svg";
-import REDUX from '../../Media/Skills/redux.svg'
+import REDUX from "../../Media/Skills/redux.svg";
 import GIT from "../../Media/Skills/git.svg";
-import POSTMAN from '../../Media/Skills/postman.svg'
-import TRELLO from '../../Media/Skills/trello.svg'
-import NOTION from '../../Media/Skills/notion.svg'
+import POSTMAN from "../../Media/Skills/postman.svg";
+import TRELLO from "../../Media/Skills/trello.svg";
+import NOTION from "../../Media/Skills/notion.svg";
+
+const backendSkills = [
+  { icon: POSTGRESQL, name: "Postgresql" },
+  { icon: SEQUELIZE, name: "Sequelize" },
+  { icon: NODEJS, name: "Nodejs" },
+  { icon: EXPRESS, name: "Express" },
+];
+
+const frontendSkills = [
+  { icon: HTML, name: "HTML" },
+  { icon: CSS, name: "CSS" },
+  { icon: JAVASCRIPT, name: "JavaScript" },
+  { icon: REACT, name: "React" },
+  { icon: REDUX, name: "Redux" },
+];
+
+const tools = [
+  { icon: GIT, name: "Git" },
+  { icon: POSTMAN, name: "Postman" },
+  { icon: TRELLO, name: "Trello" },
+  { icon: NOTION, name: "Notion" },
+];
+
+const backendSkillsHTML = backendSkills.map((skill) => (
+  <div className={style.skill}>
+    <img src={skill.icon} alt={skill.name} className={style.skillLogo} />
+    <h3 className={style.skillName}>{skill.name}</h3>
+  </div>
+));
+
+const frontendSkillsHTML = frontendSkills.map((skill) => (
+  <div className={style.skill}>
+    <img src={skill.icon} alt={skill.name} className={style.skillLogo} />
+    <h3 className={style.skillName}>{skill.name}</h3>
+  </div>
+));
+
+const toolsHTML = tools.map((tool) => (
+  <div className={style.skill}>
+    <img src={tool.icon} alt={tool.name} className={style.skillLogo} />
+    <h3 className={style.skillName}>{tool.name}</h3>
+  </div>
+));
 
 export default function Skills() {
   return (
-    <div className={style.bigContainer}>
-        <div id="skills" className={style.container}>
-            <div className={style.insideContainer}>
-                <h2>Skills</h2>
-                <div className={style.skillsContainer}>
-                    <div className={style.backendSkills}>
-                        <div className={style.skill}>
-                        <img src={POSTGRESQL} alt="PostgreSQL" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Postgresql</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={SEQUELIZE} alt="Sequelize" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Sequelize</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={NODEJS} alt="NodeJs" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Nodejs</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={EXPRESS} alt="Express" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Express</h3>
-                        </div>
-                    </div>
-                    <div className={style.frontendSkills}>
-                        <div className={style.skill}>
-                        <img src={HTML} alt="HTML5" className={style.skillLogo} />
-                        <h3 className={style.skillName}>HTML</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={CSS} alt="CSS3" className={style.skillLogo} />
-                        <h3 className={style.skillName}>CSS</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={JAVASCRIPT} alt="JavaScript" className={style.skillLogo} />
-                        <h3 className={style.skillName}>JavaScript</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={REACT} alt="React" className={style.skillLogo} />
-                        <h3 className={style.skillName}>React</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={REDUX} alt="Redux" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Redux</h3>
-                        </div>
-                    </div>
-                    <div className={style.tools}>
-                        <div className={style.skill}>
-                        <img src={GIT} alt="Git" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Git</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={POSTMAN} alt="Postman" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Postman</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={TRELLO} alt="Trello" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Trello</h3>
-                        </div>
-                        <div className={style.skill}>
-                        <img src={NOTION} alt="Notion" className={style.skillLogo} />
-                        <h3 className={style.skillName}>Notion</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="skills" className={style.container}>
+      <div className={style.insideContainer}>
+        <h2>Skills</h2>
+        <div className={style.skillsContainer}>
+          <div className={style.backendSkills}>{backendSkillsHTML}</div>
+          <div className={style.frontendSkills}>{frontendSkillsHTML}</div>
+          <div className={style.tools}>{toolsHTML}</div>
         </div>
-    </div>
+      </div>
+    </section>
   );
 }
