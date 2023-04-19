@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+}
+
+.insideContainer{
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 6vw;
+}
+
+.projectsTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(0, 0, 255, 0.919);
+    font-size: 3.5vw;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+}
