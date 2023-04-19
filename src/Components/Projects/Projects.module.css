@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+}
+
+.projectsTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(0, 0, 255, 0.919);
+    font-size: 3.5vw;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+}
+
+.insideContainer{
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 6vw;
+}
+
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 255, 0.919);
+    width: 100%;
+    margin-bottom: 4vw;
+    border: solid 0.25vw;
+    border-radius: 0.5vw;
+}
+
+.projectImage{
+    height: 21vw;
+    width: 50%;
+}
+
+.projectInfo{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projectName{
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 1vw;
+    font-size: 2vw;
+    color: white;
+}
+
+.projectSubtitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+}
+
+.projectDescription{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.25vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.linksButton{
+    transition: all 0.5s;
+    padding: 0.75vw;
+    border: 0.25vw solid black;
+    border-radius: 0.5vw;
+    color: rgba(0, 0, 255, 0.919);
+    background-color: white;
+    text-decoration: none;
+}
+
+.linksButton:hover{
+    cursor: pointer;
+}
