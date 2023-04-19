@@ -1,0 +1,10 @@
+.container{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.919);
+}
+
+.insideContainer{
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 6vw;
+}
