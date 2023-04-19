@@ -37,21 +37,21 @@ const tools = [
 
 const backendSkillsHTML = backendSkills.map((skill) => (
   <div className={style.skill}>
-    <img src={skill.icon} alt={skill.name} className={style.skillLogo} />
+    <img src={skill.icon} alt={skill.name} aria-label={skill.name} className={style.skillLogo} />
     <h3 className={style.skillName}>{skill.name}</h3>
   </div>
 ));
 
 const frontendSkillsHTML = frontendSkills.map((skill) => (
   <div className={style.skill}>
-    <img src={skill.icon} alt={skill.name} className={style.skillLogo} />
+    <img src={skill.icon} alt={skill.name} aria-label={skill.name} className={style.skillLogo} />
     <h3 className={style.skillName}>{skill.name}</h3>
   </div>
 ));
 
 const toolsHTML = tools.map((tool) => (
   <div className={style.skill}>
-    <img src={tool.icon} alt={tool.name} className={style.skillLogo} />
+    <img src={tool.icon} alt={tool.name} aria-label={skill.name} className={style.skillLogo} />
     <h3 className={style.skillName}>{tool.name}</h3>
   </div>
 ));
