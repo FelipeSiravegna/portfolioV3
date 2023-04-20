@@ -12,8 +12,8 @@ h2{
 }
 
 .insideContainer{
-    width: 70%;
-    margin-left: 15%;
+    width: 85%;
+    margin-left: 7.5%;
     padding-bottom: 6vw;
 }
 
@@ -22,7 +22,7 @@ h2{
     margin-left: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5vw;
