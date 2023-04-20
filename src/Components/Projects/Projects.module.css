@@ -4,7 +4,7 @@
 
 .projectsTitle{
     font-family: 'Josefin Sans', sans-serif;
-    color: rgba(0, 0, 255, 0.919);
+    color: rgba(0, 0, 255, 0.459);
     font-size: 3.5vw;
     padding-top: 6vw;
     padding-bottom: 4vw;
@@ -24,7 +24,7 @@
 .projectContainer{
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 255, 0.919);
+    background-color: rgba(0, 0, 255, 0.459);
     width: 100%;
     margin-bottom: 4vw;
     border: solid 0.25vw;
@@ -82,7 +82,7 @@
     padding: 0.75vw;
     border: 0.25vw solid black;
     border-radius: 0.5vw;
-    color: rgba(0, 0, 255, 0.919);
+    color: rgba(0, 0, 255, 0.459);
     background-color: white;
     text-decoration: none;
 }
