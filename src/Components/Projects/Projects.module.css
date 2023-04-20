@@ -2,6 +2,12 @@
     width: 100%;
 }
 
+.insideContainer{
+    width: 85%;
+    margin-left: 7.5%;
+    padding-bottom: 6vw;
+}
+
 .projectsTitle{
     font-family: 'Josefin Sans', sans-serif;
     color: rgba(0, 0, 255, 0.459);
@@ -10,83 +16,67 @@
     padding-bottom: 4vw;
 }
 
-.insideContainer{
-    width: 70%;
-    margin-left: 15%;
-    padding-bottom: 6vw;
-}
-
 .projectsContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2%
 }
 
-.projectContainer{
+.projectBox{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.459);
+    width: 49%;
+    border-radius: 0.25vw;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
+.projectTitle{
+    display: flex;
+    justify-content: center;
+    padding: 1.5vw;
+    font-size: 1.75vw;
+}
+
+.projectScreenshot{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 2vw;
+    border-radius: 0.25vw;
+    filter: grayscale(100%);
+}
+
+.projectTechnologies{
+    width: 90%;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 255, 0.459);
-    width: 100%;
-    margin-bottom: 4vw;
-    border: solid 0.25vw;
-    border-radius: 0.5vw;
-}
-
-.projectImage{
-    height: 21vw;
-    width: 50%;
-}
-
-.projectInfo{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 2vw;
 }
 
-.projectName{
-    display: flex;
-    justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top: 1vw;
-    font-size: 2vw;
-    color: white;
-}
-
-.projectSubtitle{
-    display: flex;
-    justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2vw;
-    color: white;
+.tech{
+    width: 2.5vw;
 }
 
 .projectDescription{
-    display: flex;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    font-size: 1.25vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 2vw;
+    font-size: 1.3vw;
 }
 
-.linksContainer{
+.links{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vw;
 }
 
-.linksButton{
-    transition: all 0.5s;
-    padding: 0.75vw;
-    border: 0.25vw solid black;
-    border-radius: 0.5vw;
-    color: rgba(0, 0, 255, 0.459);
-    background-color: white;
-    text-decoration: none;
-}
-
-.linksButton:hover{
-    cursor: pointer;
+.link{
+    width: 2.5vw;
 }
