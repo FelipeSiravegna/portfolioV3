@@ -7,7 +7,7 @@ import CV from "../../Media/CV.pdf";
 
 export default function NavBar() {
   return (
-    <div className={style.container}>
+    <nav className={style.container}>
       <div className={style.scrollLinks}>
         <a href="#skills" className={style.scrollLink}>
           Skills
@@ -41,6 +41,6 @@ export default function NavBar() {
           <img src={RESUME} className={style.navbarImages} alt="Resume" />
         </a>
       </div>
-    </div>
+    </nav>
   );
 }
