@@ -3,6 +3,8 @@
     height: 4vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
 }
 
 .scrollLinks{
