@@ -4,7 +4,40 @@
 }
 
 .insideContainer{
-    width: 70%;
-    margin-left: 15%;
+    width: 85%;
+    margin-left: 7.5%;
     padding-bottom: 6vw;
+}
+
+.aboutTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 3.5vw;
+    padding-top: 6vw;
+    padding-bottom: 1vw;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aboutText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: white;
+    width: 60%;
+}
+
+.profilepic{
+    height: 20vw;
+    width: 25%;
+    margin-left: 15%;
+    border: solid 1vw white;
+    border-radius: 50%;
 }
