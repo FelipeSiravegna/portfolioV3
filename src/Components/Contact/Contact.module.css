@@ -33,10 +33,12 @@
     height: 2vw;
     border: solid 0.25vw rgba(0, 0, 255, 0.459);
     border-radius: 0.25vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .messageInput{
     border: solid 0.25vw rgba(0, 0, 255, 0.459);
+    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.25vw;
 }
 
