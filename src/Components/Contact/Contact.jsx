@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="about" className={style.container}>
       <div className={style.insideContainer}>
         <h2 className={style.contactTitle}>Contact</h2>
-        <form action="https://formsubmit.co/felipesiravegnadev@gmail.com" method="POST" className={style.form} >
+        <form action="https://formsubmit.co/68fbb8c994987283faabdfe03ce8d376" method="POST" className={style.form} >
                 <label for="nombre" className={style.label}>Name</label>
                 <input type="text" name="Name" className={style.input}/>
 
