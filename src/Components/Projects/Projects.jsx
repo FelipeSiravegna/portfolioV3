@@ -14,6 +14,9 @@ import BOOTSTRAP from "../../Media/Skills/bootstrap.svg";
 import MATERIALUI from "../../Media/Skills/materialui.svg";
 import DEPLOY from "../../Media/eye.svg";
 import CODE from "../../Media/code.svg";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const technologies = [
   { icon: POSTGRESQL, name: "Postgresql" },
@@ -38,12 +41,17 @@ const technologiesHTML = technologies.map((technology) => (
 ));
 
 export default function Projects() {
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
+
   return (
     <section id="projects" className={style.container}>
       <div className={style.insideContainer}>
         <h2 className={style.projectsTitle}>Projects</h2>
         <div className={style.projectsContainer}>
-          <article className={style.projectBox}>
+          <article data-aos="fade-right" className={style.projectBox}>
             <h3 className={style.projectTitle}>Gamegeist</h3>
             <img
               className={style.projectScreenshot}
@@ -81,7 +89,7 @@ export default function Projects() {
               </a>
             </div>
           </article>
-          <article className={style.projectBox}>
+          <article data-aos="fade-left" className={style.projectBox}>
             <h3 className={style.projectTitle}>The corner movies</h3>
             <img
               className={style.projectScreenshot}

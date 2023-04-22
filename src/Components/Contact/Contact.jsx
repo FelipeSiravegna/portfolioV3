@@ -1,11 +1,19 @@
 import style from "./Contact.module.css";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 export default function Contact() {
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
+
   return (
     <section id="about" className={style.container}>
       <div className={style.insideContainer}>
         <h2 className={style.contactTitle}>Contact</h2>
-        <form action="https://formsubmit.co/68fbb8c994987283faabdfe03ce8d376" method="POST" className={style.form} >
+        <form data-aos="zoom-in" action="https://formsubmit.co/68fbb8c994987283faabdfe03ce8d376" method="POST" className={style.form} >
                 <label for="nombre" className={style.label}>Name</label>
                 <input type="text" name="Name" className={style.input}/>
 

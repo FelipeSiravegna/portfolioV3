@@ -12,6 +12,9 @@ import GIT from "../../Media/Skills/git.svg";
 import POSTMAN from "../../Media/Skills/postman.svg";
 import TRELLO from "../../Media/Skills/trello.svg";
 import NOTION from "../../Media/Skills/notion.svg";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const backendSkills = [
   { icon: POSTGRESQL, name: "Postgresql" },
@@ -57,14 +60,19 @@ const toolsHTML = tools.map((tool) => (
 ));
 
 export default function Skills() {
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
+
   return (
     <section id="skills" className={style.container}>
       <div className={style.insideContainer}>
         <h2>Skills</h2>
         <div className={style.skillsContainer}>
-          <div className={style.backendSkills}>{backendSkillsHTML}</div>
-          <div className={style.frontendSkills}>{frontendSkillsHTML}</div>
-          <div className={style.tools}>{toolsHTML}</div>
+          <div data-aos="zoom-in" className={style.backendSkills}>{backendSkillsHTML}</div>
+          <div data-aos="zoom-in" className={style.frontendSkills}>{frontendSkillsHTML}</div>
+          <div data-aos="zoom-in" className={style.tools}>{toolsHTML}</div>
         </div>
       </div>
     </section>
