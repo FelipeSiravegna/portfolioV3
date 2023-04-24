@@ -1,4 +1,4 @@
-@media(min-width: 1024px){
+/* @media(min-width: 1024px){
     .container{
         width: 100%;
         background-color: rgba(0, 0, 255, 0.459);
@@ -88,11 +88,11 @@
         border: solid 1vw white;
         border-radius: 50%;
     }
-}
+} */
 
-@media(max-width: 767px){
+@media(max-width: 374px){
     .container{
-        width: 100%;
+        display: none;
         background-color: rgba(0, 0, 255, 0.459);
     }
     

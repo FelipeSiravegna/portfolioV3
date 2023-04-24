@@ -1,4 +1,4 @@
-@media(min-width: 1024px){
+/* @media(min-width: 1024px){
     .container{
         width: 100%;
     }
@@ -46,7 +46,7 @@
         margin-left: 5%;
         padding-bottom: 2vw;
         border-radius: 0.25vw;
-        /* filter: grayscale(100%); */
+        /* filter: grayscale(100%); 
     }
     
     .projectTechnologies{
@@ -131,7 +131,7 @@
         margin-left: 5%;
         padding-bottom: 2vw;
         border-radius: 0.25vw;
-        /* filter: grayscale(100%); */
+        /* filter: grayscale(100%);
     }
     
     .projectTechnologies{
@@ -166,13 +166,13 @@
     .link{
         width: 2.5vw;
     }
-}
+} */
 
-@media(max-width: 767px){
+@media(max-width: 374px){
     .container{
-        width: 100%;
+        display: none;
     }
-    
+
     .insideContainer{
         width: 85%;
         margin-left: 7.5%;
