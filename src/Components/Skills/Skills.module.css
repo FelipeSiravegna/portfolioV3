@@ -1,149 +1,53 @@
-/* @media (min-width: 1024px) {
+@media (min-width: 320px) {
   .container {
-    width: 100%;
     background-color: rgba(0, 0, 255, 0.459);
   }
 
   h2 {
     font-family: "Josefin Sans", sans-serif;
     color: white;
-    font-size: 3.5vw;
-    padding-top: 6vw;
-    padding-bottom: 4vw;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .insideContainer {
     width: 85%;
     margin-left: 7.5%;
-    padding-bottom: 6vw;
+    padding-bottom: 30px;
   }
 
   .skillsContainer {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5vw;
+    font-size: 10px;
+  }
+
+  .backendSkills {
+    margin-bottom: 25px;
+  }
+
+  .frontendSkills{
+    margin-bottom: 25px;
   }
 
   .skill {
     display: flex;
-    gap: 1vw;
+    gap: 5px;
     text-align: center;
     justify-content: flex-start;
-    height: 2.5vw;
-    padding-bottom: 1.5vw;
-  }
-
-  .skillName {
-    margin-top: 0.5vw;
+    height: 10px;
+    padding-bottom: 8px;
   }
 
   .skillLogo {
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 10px;
+    width: 10px;
   }
-}
-
-@media(max-width: 1023px){
-    .container {
-        width: 100%;
-        background-color: rgba(0, 0, 255, 0.459);
-      }
-    
-      h2 {
-        font-family: "Josefin Sans", sans-serif;
-        color: white;
-        font-size: 3.5vw;
-        padding-top: 6vw;
-        padding-bottom: 4vw;
-      }
-    
-      .insideContainer {
-        width: 85%;
-        margin-left: 7.5%;
-        padding-bottom: 6vw;
-      }
-    
-      .skillsContainer {
-        width: 80%;
-        margin-left: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        color: white;
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 1.5vw;
-      }
-    
-      .skill {
-        display: flex;
-        gap: 1vw;
-        text-align: center;
-        justify-content: flex-start;
-        height: 2.5vw;
-        padding-bottom: 1.5vw;
-      }
-    
-      .skillName {
-        margin-top: 0.5vw;
-      }
-    
-      .skillLogo {
-        height: 2.5vw;
-        width: 2.5vw;
-      }
-} */
-
-@media(max-width: 374px){
-    .container {
-        display: none;
-        background-color: rgba(0, 0, 255, 0.459);
-      }
-    
-      h2 {
-        font-family: "Josefin Sans", sans-serif;
-        color: white;
-        font-size: 3.5vw;
-        padding-top: 6vw;
-        padding-bottom: 4vw;
-      }
-    
-      .insideContainer {
-        width: 85%;
-        margin-left: 7.5%;
-        padding-bottom: 6vw;
-      }
-    
-      .skillsContainer {
-        width: 80%;
-        margin-left: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        color: white;
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 1.5vw;
-      }
-    
-      .skill {
-        display: flex;
-        gap: 1vw;
-        text-align: center;
-        justify-content: flex-start;
-        height: 2.5vw;
-        padding-bottom: 1.5vw;
-      }
-    
-      .skillName {
-        margin-top: 0.5vw;
-      }
-    
-      .skillLogo {
-        height: 2.5vw;
-        width: 2.5vw;
-      }
 }

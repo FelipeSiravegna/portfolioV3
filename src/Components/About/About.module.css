@@ -90,7 +90,7 @@
     }
 } */
 
-@media(max-width: 374px){
+@media(min-width: 320px){
     .container{
         display: none;
         background-color: rgba(0, 0, 255, 0.459);

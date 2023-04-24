@@ -128,7 +128,7 @@
   }
 } */
 
-@media (max-width: 374px) {
+@media (min-width: 320px) {
   .container {
     display: none;
     font-family: "Josefin Sans", sans-serif;
