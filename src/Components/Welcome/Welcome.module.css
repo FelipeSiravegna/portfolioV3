@@ -1,15 +1,29 @@
-@media (min-width: 320px) {
+@media (max-width: 767px) {
   .container {
-    display: none;
-    /* +25 */
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
     margin-left: 7.5%;
   }
 
   h1 {
-    /* +2 */
-    font-size: 20px;
+    font-size: 5vh;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .color {
+    color: rgba(0, 0, 255, 0.459);
+  }
+}
+
+@media (max-width: 1920px) {
+  .container {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    margin-left: 7.5%;
+  }
+
+  h1 {
+    font-size: 6vh;
     font-family: "Josefin Sans", sans-serif;
   }
 
