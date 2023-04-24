@@ -48,6 +48,56 @@
   }
 }
 
+@media(max-width: 1023px){
+    .container {
+        width: 100%;
+        background-color: rgba(0, 0, 255, 0.459);
+      }
+    
+      h2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        font-size: 3.5vw;
+        padding-top: 6vw;
+        padding-bottom: 4vw;
+      }
+    
+      .insideContainer {
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+      }
+    
+      .skillsContainer {
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5vw;
+      }
+    
+      .skill {
+        display: flex;
+        gap: 1vw;
+        text-align: center;
+        justify-content: flex-start;
+        height: 2.5vw;
+        padding-bottom: 1.5vw;
+      }
+    
+      .skillName {
+        margin-top: 0.5vw;
+      }
+    
+      .skillLogo {
+        height: 2.5vw;
+        width: 2.5vw;
+      }
+}
+
 @media(max-width: 767px){
     .container {
         width: 100%;

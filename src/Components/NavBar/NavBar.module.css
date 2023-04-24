@@ -41,6 +41,49 @@
   }
 }
 
+@media(max-width: 1023px){
+    .container {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .scrollLinks {
+    display: flex;
+    margin-left: 3vw;
+    margin-top: 1.25vw;
+    flex-direction: row;
+    gap: 3vw;
+  }
+
+  .scrollLink {
+    font-size: 1.5vw;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+
+  .linksContainer {
+    width: 15%;
+    display: flex;
+  }
+
+  .navbarImages {
+    margin-top: 1vw;
+    margin-right: 3vw;
+    height: 2vw;
+    width: 2vw;
+  }
+
+  .link {
+    margin-right: 3vw;
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
 @media(max-width: 767px){
     .container {
     width: 100%;
