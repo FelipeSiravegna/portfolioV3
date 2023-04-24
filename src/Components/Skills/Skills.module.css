@@ -1,54 +1,50 @@
-@media (min-width: 320px) {
+@media (max-width: 767px) {
   .container {
-    display: none;
     background-color: rgba(0, 0, 255, 0.459);
   }
 
   h2 {
     font-family: "Josefin Sans", sans-serif;
     color: white;
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-size: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 
   .insideContainer {
     width: 85%;
     margin-left: 7.5%;
-    padding-bottom: 30px;
+    padding-bottom: 5vh;
   }
 
   .skillsContainer {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 10px;
+    font-size: 2.3vh;
   }
 
   .backendSkills {
-    margin-bottom: 25px;
+    margin-bottom: 2vh;
   }
 
   .frontendSkills{
-    margin-bottom: 25px;
+    margin-bottom: 2vh;
   }
 
   .skill {
     display: flex;
-    gap: 5px;
+    gap:0.5vh;
     text-align: center;
     justify-content: flex-start;
-    height: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 2vh;
   }
 
   .skillLogo {
-    height: 10px;
-    width: 10px;
+    height: 2.5vh;
+    width: 2.5vh;
   }
 }
