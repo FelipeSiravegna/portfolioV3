@@ -1,82 +1,169 @@
-.container{
-    width: 100%;
+@media(min-width: 1024px){
+    .container{
+        width: 100%;
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .projectsTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(0, 0, 255, 0.459);
+        font-size: 3.5vw;
+        padding-top: 6vw;
+        padding-bottom: 4vw;
+    }
+    
+    .projectsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 2%
+    }
+    
+    .projectBox{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 255, 0.459);
+        width: 49%;
+        border-radius: 0.25vw;
+        font-family: 'Josefin Sans', sans-serif;
+        box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+    }
+    
+    .projectTitle{
+        display: flex;
+        justify-content: center;
+        padding: 1.5vw;
+        font-size: 1.75vw;
+    }
+    
+    .projectScreenshot{
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 2vw;
+        border-radius: 0.25vw;
+        /* filter: grayscale(100%); */
+    }
+    
+    .projectTechnologies{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 2vw;
+    }
+    
+    .tech{
+        width: 2.5vw;
+    }
+    
+    .projectDescription{
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 2vw;
+        font-size: 1.3vw;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 1.5vw;
+    }
+    
+    .link{
+        width: 2.5vw;
+    }
 }
 
-.insideContainer{
-    width: 85%;
-    margin-left: 7.5%;
-    padding-bottom: 6vw;
-}
-
-.projectsTitle{
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgba(0, 0, 255, 0.459);
-    font-size: 3.5vw;
-    padding-top: 6vw;
-    padding-bottom: 4vw;
-}
-
-.projectsContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 2%
-}
-
-.projectBox{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 255, 0.459);
-    width: 49%;
-    border-radius: 0.25vw;
-    font-family: 'Josefin Sans', sans-serif;
-    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
-}
-
-.projectTitle{
-    display: flex;
-    justify-content: center;
-    padding: 1.5vw;
-    font-size: 1.75vw;
-}
-
-.projectScreenshot{
-    width: 90%;
-    margin-left: 5%;
-    padding-bottom: 2vw;
-    border-radius: 0.25vw;
-    /* filter: grayscale(100%); */
-}
-
-.projectTechnologies{
-    width: 90%;
-    margin-left: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 2vw;
-}
-
-.tech{
-    width: 2.5vw;
-}
-
-.projectDescription{
-    width: 90%;
-    margin-left: 5%;
-    padding-bottom: 2vw;
-    font-size: 1.3vw;
-}
-
-.links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 5%;
-    padding-bottom: 1.5vw;
-}
-
-.link{
-    width: 2.5vw;
+@media(max-width: 767px){
+    .container{
+        width: 100%;
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .projectsTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(0, 0, 255, 0.459);
+        font-size: 3.5vw;
+        padding-top: 6vw;
+        padding-bottom: 4vw;
+    }
+    
+    .projectsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    
+    .projectBox{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 255, 0.459);
+        width: 49%;
+        border-radius: 0.25vw;
+        font-family: 'Josefin Sans', sans-serif;
+        box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+    }
+    
+    .projectTitle{
+        display: flex;
+        justify-content: center;
+        padding: 1.5vw;
+        font-size: 1.75vw;
+    }
+    
+    .projectScreenshot{
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 2vw;
+        border-radius: 0.25vw;
+        /* filter: grayscale(100%); */
+    }
+    
+    .projectTechnologies{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 2vw;
+    }
+    
+    .tech{
+        width: 2.5vw;
+    }
+    
+    .projectDescription{
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 2vw;
+        font-size: 1.3vw;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 1.5vw;
+    }
+    
+    .link{
+        width: 2.5vw;
+    }
 }

@@ -1,43 +1,93 @@
-.container{
-    width: 100%;
-    background-color: rgba(0, 0, 255, 0.459);
+@media(min-width: 1024px){
+    .container{
+        width: 100%;
+        background-color: rgba(0, 0, 255, 0.459);
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .aboutTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        font-size: 3.5vw;
+        padding-top: 6vw;
+        padding-bottom: 1vw;
+    }
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .aboutText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5vw;
+        font-weight: 600;
+        color: white;
+        width: 60%;
+    }
+    
+    .profilepic{
+        height: 20vw;
+        width: 25%;
+        margin-left: 15%;
+        border: solid 1vw white;
+        border-radius: 50%;
+    }
 }
 
-.insideContainer{
-    width: 85%;
-    margin-left: 7.5%;
-    padding-bottom: 6vw;
-}
-
-.aboutTitle{
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    font-size: 3.5vw;
-    padding-top: 6vw;
-    padding-bottom: 1vw;
-}
-
-.infoContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.aboutText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: white;
-    width: 60%;
-}
-
-.profilepic{
-    height: 20vw;
-    width: 25%;
-    margin-left: 15%;
-    border: solid 1vw white;
-    border-radius: 50%;
+@media(max-width: 767px){
+    .container{
+        width: 100%;
+        background-color: rgba(0, 0, 255, 0.459);
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .aboutTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        font-size: 3.5vw;
+        padding-top: 6vw;
+        padding-bottom: 1vw;
+    }
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .aboutText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5vw;
+        font-weight: 600;
+        color: white;
+        width: 60%;
+    }
+    
+    .profilepic{
+        height: 20vw;
+        width: 25%;
+        margin-left: 15%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        border: solid 1vw white;
+        border-radius: 50%;
+    }
 }
