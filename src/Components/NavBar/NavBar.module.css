@@ -1,28 +1,3 @@
-@media (max-width: 767px) {
-  .container {
-    width: 100%;
-    height: 9vh;
-    background-color: white;
-  }
-
-  .scrollLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .scrollLink {
-    text-decoration: none;
-    color: black;
-  }
-
-  .navbarImages {
-    margin-top: 1.5vh;
-    height: 6vh;
-    width: 6vw;
-  }
-}
-
 @media (max-width: 1920px) {
   .container {
     width: 100%;
@@ -45,5 +20,30 @@
     margin-top: 1vh;
     height: 5vh;
     width: 5vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+  }
+
+  .scrollLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .scrollLink {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbarImages {
+    margin-top: 1.5vh;
+    height: 6vh;
+    width: 6vw;
   }
 }
