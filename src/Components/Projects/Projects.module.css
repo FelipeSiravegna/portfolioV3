@@ -1,84 +1,243 @@
-@media(min-width: 320px){
-    .container{
-        display: none;
-    }
+@media (max-width: 1920px) {
+  .insideContainer {
+    width: 85%;
+    margin-left: 7.5%;
+    padding-bottom: 6vh;
+  }
 
-    .insideContainer{
-        width: 85%;
-        margin-left: 7.5%;
-        padding-bottom: 6vw;
-    }
-    
-    .projectsTitle{
-        font-family: 'Josefin Sans', sans-serif;
-        color: rgba(0, 0, 255, 0.459);
-        font-size: 3.5vw;
-        padding-top: 6vw;
-        padding-bottom: 4vw;
-    }
-    
-    .projectsContainer{
-        display: flex;
-        flex-direction: column;
-        gap: 5vw;
-    }
-    
-    .projectBox{
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 255, 0.459);
-        width: 49%;
-        border-radius: 0.25vw;
-        font-family: 'Josefin Sans', sans-serif;
-        box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: white;
-    }
-    
-    .projectTitle{
-        display: flex;
-        justify-content: center;
-        padding: 1.5vw;
-        font-size: 1.75vw;
-    }
-    
-    .projectScreenshot{
-        width: 90%;
-        margin-left: 5%;
-        padding-bottom: 2vw;
-        border-radius: 0.25vw;
-        /* filter: grayscale(100%); */
-    }
-    
-    .projectTechnologies{
-        width: 90%;
-        margin-left: 5%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 2vw;
-    }
-    
-    .tech{
-        width: 2.5vw;
-    }
-    
-    .projectDescription{
-        width: 90%;
-        margin-left: 5%;
-        padding-bottom: 2vw;
-        font-size: 1.3vw;
-    }
-    
-    .links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 90%;
-        margin-left: 5%;
-        padding-bottom: 1.5vw;
-    }
-    
-    .link{
-        width: 2.5vw;
-    }
+  .projectsTitle {
+    font-family: "Josefin Sans", sans-serif;
+    color: rgba(0, 0, 255, 0.459);
+    font-size: 7vh;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3vh;
+  }
+
+  .projectBox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.459);
+    width: 49%;
+    border-radius: 0.25vw;
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+  }
+
+  .projectTitle {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+    font-size: 3.5vh;
+  }
+
+  .projectScreenshot {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vh;
+    border-radius: 0.25vw;
+  }
+
+  .projectTechnologies {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2vh;
+  }
+
+  .tech {
+    width: 3vw;
+  }
+
+  .projectDescription {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 2vh;
+    font-size: 2vw;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vh;
+  }
+
+  .link {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .insideContainer {
+    width: 85%;
+    margin-left: 7.5%;
+    padding-bottom: 6vh;
+  }
+
+  .projectsTitle {
+    font-family: "Josefin Sans", sans-serif;
+    color: rgba(0, 0, 255, 0.459);
+    font-size: 6vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .projectBox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.459);
+    width: 100%;
+    border-radius: 0.25vw;
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+  }
+
+  .projectTitle {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    font-size: 3.5vh;
+  }
+
+  .projectScreenshot {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vh;
+    border-radius: 0.25vw;
+  }
+
+  .projectTechnologies {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2vh;
+  }
+
+  .tech {
+    width: 4vh;
+  }
+
+  .projectDescription {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 2vh;
+    font-size: 2.75vh;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vh;
+  }
+
+  .link {
+    width: 4vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .insideContainer {
+    width: 85%;
+    margin-left: 7.5%;
+    padding-bottom: 6vh;
+  }
+
+  .projectsTitle {
+    font-family: "Josefin Sans", sans-serif;
+    color: rgba(0, 0, 255, 0.459);
+    font-size: 6vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .projectBox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.459);
+    width: 100%;
+    border-radius: 0.25vw;
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+  }
+
+  .projectTitle {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    font-size: 3.5vh;
+  }
+
+  .projectScreenshot {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vh;
+    border-radius: 0.25vw;
+  }
+
+  .projectTechnologies {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2vh;
+  }
+
+  .tech {
+    width: 4vh;
+  }
+
+  .projectDescription {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 1.5vw;
+  }
+
+  .link {
+    width: 3vh;
+  }
 }
