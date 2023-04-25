@@ -8,13 +8,13 @@
     color: white;
     font-size: 7vh;
     padding-top: 7vh;
-    padding-bottom: 7vh;
+    padding-bottom: 5vh;
   }
 
   .insideContainer {
     width: 85%;
     margin-left: 7.5%;
-    padding-bottom: 7vh;
+    padding-bottom: 5vh;
   }
 
   .skillsContainer {
@@ -32,15 +32,20 @@
     gap: 1vh;
     text-align: center;
     justify-content: flex-start;
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
+  }
+
+  .skillName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .skillLogo {
-    height: 4vh;
-    width: 4vh;
+    height: 5vh;
+    width: 5vh;
   }
 }
-
 
 @media (max-width: 1023px) {
   .container {
@@ -50,15 +55,15 @@
   h2 {
     font-family: "Josefin Sans", sans-serif;
     color: white;
-    font-size: 7vh;
+    font-size: 6vh;
     padding-top: 7vh;
-    padding-bottom: 7vh;
+    padding-bottom: 5vh;
   }
 
   .insideContainer {
     width: 85%;
     margin-left: 7.5%;
-    padding-bottom: 7vh;
+    padding-bottom: 5vh;
   }
 
   .skillsContainer {
@@ -68,7 +73,7 @@
     justify-content: space-around;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 3vh;
+    font-size: 2.3vh;
   }
 
   .skill {
@@ -76,12 +81,18 @@
     gap: 1vh;
     text-align: center;
     justify-content: flex-start;
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
+  }
+
+  .skillName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .skillLogo {
-    height: 4vh;
-    width: 4vh;
+    height: 5vh;
+    width: 5vh;
   }
 }
 
@@ -92,8 +103,8 @@
 
   h2 {
     font-family: "Josefin Sans", sans-serif;
-    color: red;
-    font-size: 5vh;
+    color: white;
+    font-size: 6vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
@@ -114,14 +125,6 @@
     font-size: 2.3vh;
   }
 
-  .backendSkills {
-    margin-bottom: 2vh;
-  }
-
-  .frontendSkills{
-    margin-bottom: 2vh;
-  }
-
   .skill {
     display: flex;
     gap: 1vh;
@@ -130,8 +133,14 @@
     padding-bottom: 4vh;
   }
 
+  .skillName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .skillLogo {
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
   }
 }
