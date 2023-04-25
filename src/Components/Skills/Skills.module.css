@@ -137,10 +137,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 4vw;
   }
 
   .skillLogo {
-    height: 4vh;
-    width: 4vh;
+    height: 5vw;
+    width: 5vw;
   }
 }
