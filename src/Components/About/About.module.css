@@ -1,6 +1,5 @@
-@media(min-width: 320px){
+@media (max-width: 1920px) {
     .container{
-        display: none;
         background-color: rgba(0, 0, 255, 0.459);
     }
     
@@ -13,14 +12,14 @@
     .aboutTitle{
         font-family: 'Josefin Sans', sans-serif;
         color: white;
-        font-size: 3.5vw;
-        padding-top: 6vw;
+        font-size: 5vw;
+        padding-top: 5vw;
         padding-bottom: 1vw;
     }
     
     .infoContainer{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: center;
     }
     
@@ -29,7 +28,7 @@
         align-items: center;
         justify-content: center;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         font-weight: 600;
         color: white;
         width: 60%;
@@ -41,6 +40,145 @@
         margin-left: 15%;
         margin-top: 2vw;
         margin-bottom: 2vw;
+        border: solid 1vw white;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container{
+        background-color: rgba(0, 0, 255, 0.459);
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .aboutTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        font-size: 5vw;
+        padding-top: 6vw;
+        padding-bottom: 1vw;
+    }
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .aboutText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.7vw;
+        font-weight: 600;
+        color: white;
+        width: 60%;
+    }
+    
+    .profilepic{
+        height: 20vw;
+        width: 25%;
+        margin-left: 15%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        border: solid 1vw white;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        background-color: rgba(0, 0, 255, 0.459);
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .aboutTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        font-size: 9vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+    }
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .aboutText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+    }
+    
+    .profilepic{
+        height: 25vw;
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 1vw;
+        margin-bottom: 5vw;
+        border: solid 1vw white;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 420px) {
+    .container{
+        background-color: rgba(0, 0, 255, 0.459);
+    }
+    
+    .insideContainer{
+        width: 85%;
+        margin-left: 7.5%;
+        padding-bottom: 6vw;
+    }
+    
+    .aboutTitle{
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        font-size: 9vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+    }
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .aboutText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3vw;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+    }
+    
+    .profilepic{
+        height: 35vw;
+        width: 45%;
+        margin-left: 27.5%;
+        margin-top: 2vw;
+        margin-bottom: 7vw;
         border: solid 1vw white;
         border-radius: 50%;
     }
