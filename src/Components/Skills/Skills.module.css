@@ -73,7 +73,7 @@
     justify-content: space-around;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 2.3vh;
+    font-size: 2.5vw;
   }
 
   .skill {
@@ -142,5 +142,54 @@
   .skillLogo {
     height: 4vw;
     width: 4vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    background-color: rgba(0, 0, 255, 0.459);
+  }
+
+  h2 {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-size: 9vw;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+  }
+
+  .insideContainer {
+    width: 85%;
+    margin-left: 7.5%;
+    padding-bottom: 9vw;
+  }
+
+  .skillsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .skill {
+    display: flex;
+    gap: 1vw;
+    text-align: center;
+    justify-content: flex-start;
+    padding-bottom: 6vw;
+  }
+
+  .skillName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+  }
+
+  .skillLogo {
+    height: 3.5vw;
+    width: 3.5vw;
   }
 }
