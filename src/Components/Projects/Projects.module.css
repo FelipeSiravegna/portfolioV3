@@ -8,9 +8,9 @@
   .projectsTitle {
     font-family: "Josefin Sans", sans-serif;
     color: rgba(0, 0, 255, 0.459);
-    font-size: 7vh;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
+    font-size: 4vw;
+    padding-top: 5vw;
+    padding-bottom: 4vw;
   }
 
   .projectsContainer {
