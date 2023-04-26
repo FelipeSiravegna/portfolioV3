@@ -17,9 +17,9 @@
   }
 
   .navbarImages {
-    margin-top: 1vh;
-    height: 5vh;
-    width: 5vh;
+    padding: 1vw;
+    height: 2vw;
+    width: 2vw;
   }
 }
 
