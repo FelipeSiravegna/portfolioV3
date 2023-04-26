@@ -53,7 +53,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
   }
 
   .tech {
