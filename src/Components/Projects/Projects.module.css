@@ -35,8 +35,8 @@
   .projectTitle {
     display: flex;
     justify-content: center;
-    padding: 3vh;
-    font-size: 3.5vh;
+    padding: 4vh;
+    font-size: 4vh;
   }
 
   .projectScreenshot {
