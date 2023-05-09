@@ -5,15 +5,36 @@
     background-color: white;
   }
 
-  .scrollLinks {
+  .scrollLinksMobile {
+    display: none;
+  }
+
+  .scrollLinksPC{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .scrollLink {
     text-decoration: none;
     color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4vw;
+  }
+
+  .scrollLinksInside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 2vw;
+  }
+
+  .scrollLinksOutside{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+    padding-right: 2vw;
   }
 
   .navbarImages {
@@ -30,10 +51,14 @@
     background-color: white;
   }
 
-  .scrollLinks {
+  .scrollLinksMobile {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .scrollLinksPC{
+    display: none;
   }
 
   .scrollLink {
