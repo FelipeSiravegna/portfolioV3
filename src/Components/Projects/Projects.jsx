@@ -1,6 +1,5 @@
 import style from "./Projects.module.css";
 import ProjectLink from "../ProjectLink/ProjectLink";
-
 import GAMEGEIST from "../../Media/Projects/gamegeist.png";
 import THECORNERMOVIES from "../../Media/Projects/the corner movies.png";
 import POSTGRESQL from "../../Media/Skills/postgresql.svg";
@@ -20,7 +19,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const technologies = [
+const technologiesGamegeist = [
   { icon: POSTGRESQL, name: "Postgresql" },
   { icon: SEQUELIZE, name: "Sequelize" },
   { icon: NODEJS, name: "Nodejs" },
@@ -32,7 +31,31 @@ const technologies = [
   { icon: REDUX, name: "Redux" },
 ];
 
-const technologiesHTML = technologies.map((technology) => (
+const technologiesHTMLGamegeist = technologiesGamegeist.map((technology) => (
+  <img
+    className={style.tech}
+    src={technology.icon}
+    alt={technology.name}
+    aria-label={technology.name}
+    key={technology.name}
+  />
+));
+
+const technologiesTCM = [
+  { icon: POSTGRESQL, name: "Postgresql" },
+  { icon: SEQUELIZE, name: "Sequelize" },
+  { icon: NODEJS, name: "Nodejs" },
+  { icon: EXPRESS, name: "Express" },
+  { icon: HTML, name: "HTML" },
+  { icon: CSS, name: "CSS" },
+  { icon: JAVASCRIPT, name: "JavaScript" },
+  { icon: REACT, name: "React" },
+  { icon: REDUX, name: "Redux" },
+  { icon: BOOTSTRAP, name: "Bootstrap" },
+  { icon: MATERIALUI, name: 'MaterialUI'}
+];
+
+const technologiesHTMLTCM = technologiesTCM.map((technology) => (
   <img
     className={style.tech}
     src={technology.icon}
@@ -60,7 +83,9 @@ export default function Projects() {
               alt="Gamegeist"
               aria-label="Gamegeist"
             />
-            <div className={style.projectTechnologies}>{technologiesHTML}</div>
+            <div className={style.projectTechnologies}>
+              {technologiesHTMLGamegeist}
+            </div>
             <p className={style.projectDescription}>
               Web application focused on video games using the rawg.io API. In
               this application, users can view a list of video games that they
@@ -90,19 +115,7 @@ export default function Projects() {
               aria-label="The corner movies"
             />
             <div className={style.projectTechnologies}>
-              {technologiesHTML}
-              <img
-                className={style.tech}
-                src={BOOTSTRAP}
-                alt="Bootstrap"
-                aria-label="Bootstrap"
-              />
-              <img
-                className={style.tech}
-                src={MATERIALUI}
-                alt="Material UI"
-                aria-label="Material UI"
-              />
+              {technologiesHTMLTCM}
             </div>
             <p className={style.projectDescription}>
               Web application focused on movies where users can view a list of
