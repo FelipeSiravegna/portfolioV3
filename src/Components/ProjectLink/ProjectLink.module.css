@@ -1,0 +1,24 @@
+@media (max-width: 1920px) {
+  .link {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .link {
+    width: 4vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .link {
+    width: 3vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .link {
+    padding-bottom: 2vw;
+    width: 5.5vw;
+  }
+}

@@ -1,4 +1,6 @@
 import style from "./Projects.module.css";
+import ProjectLink from "../ProjectLink/ProjectLink";
+
 import GAMEGEIST from "../../Media/Projects/gamegeist.png";
 import THECORNERMOVIES from "../../Media/Projects/the corner movies.png";
 import POSTGRESQL from "../../Media/Skills/postgresql.svg";
@@ -14,8 +16,8 @@ import BOOTSTRAP from "../../Media/Skills/bootstrap.svg";
 import MATERIALUI from "../../Media/Skills/materialui.svg";
 import DEPLOY from "../../Media/eye.svg";
 import CODE from "../../Media/code.svg";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const technologies = [
@@ -41,10 +43,9 @@ const technologiesHTML = technologies.map((technology) => (
 ));
 
 export default function Projects() {
-
   useEffect(() => {
-    Aos.init({duration: 1500})
-  }, [])
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <section id="projects" className={style.container}>
@@ -68,25 +69,16 @@ export default function Projects() {
               videogame rating, a description, where they can play it and more.
             </p>
             <div className={style.links}>
-              <a href="https://gamegeist.vercel.app/" target="_blank">
-                <img
-                  className={style.link}
-                  src={DEPLOY}
-                  alt="Deploy"
-                  aria-label="Deploy"
-                />
-              </a>
-              <a
-                href="https://github.com/FelipeSiravegna/PI-Videogames"
-                target="_blank"
-              >
-                <img
-                  className={style.link}
-                  src={CODE}
-                  alt="Code"
-                  aria-label="Code"
-                />
-              </a>
+              <ProjectLink
+                url="https://gamegeist.vercel.app/"
+                image={DEPLOY}
+                alt="DEPLOY"
+              />
+              <ProjectLink
+                url="https://github.com/FelipeSiravegna/PI-Videogames"
+                image={CODE}
+                alt="CODE"
+              />
             </div>
           </article>
           <article data-aos="fade-left" className={style.projectBox}>
@@ -121,36 +113,21 @@ export default function Projects() {
               more.
             </p>
             <div className={style.links}>
-              <a href="https://thecornermovies.vercel.app/" target="_blank">
-                <img
-                  className={style.link}
-                  src={DEPLOY}
-                  alt="Deploy"
-                  aria-label="Deploy"
-                />
-              </a>
-              <a
-                href="https://github.com/FelipeSiravegna/ProyectoGrupal-Backend"
-                target="_blank"
-              >
-                <img
-                  className={style.link}
-                  src={CODE}
-                  alt="Code"
-                  aria-label="Code"
-                />
-              </a>
-              <a
-                href="https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend"
-                target="_blank"
-              >
-                <img
-                  className={style.link}
-                  src={CODE}
-                  alt="Code"
-                  aria-label="Code"
-                />
-              </a>
+              <ProjectLink
+                url="https://thecornermovies.vercel.app/"
+                image={DEPLOY}
+                alt="DEPLOY"
+              />
+              <ProjectLink
+                url="https://github.com/FelipeSiravegna/ProyectoGrupal-Backend"
+                image={CODE}
+                alt="CODE"
+              />
+              <ProjectLink
+                url="https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend"
+                image={CODE}
+                alt="CODE"
+              />
             </div>
           </article>
         </div>
