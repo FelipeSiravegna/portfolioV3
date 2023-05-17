@@ -1,5 +1,5 @@
 import style from "./Projects.module.css";
-import ProjectLink from "../ProjectLink/ProjectLink";
+import Project from "../Project/Project";
 import GAMEGEIST from "../../Media/Projects/gamegeist.png";
 import THECORNERMOVIES from "../../Media/Projects/the corner movies.png";
 import POSTGRESQL from "../../Media/Skills/postgresql.svg";
@@ -13,11 +13,6 @@ import REACT from "../../Media/Skills/react.svg";
 import REDUX from "../../Media/Skills/redux.svg";
 import BOOTSTRAP from "../../Media/Skills/bootstrap.svg";
 import MATERIALUI from "../../Media/Skills/materialui.svg";
-import DEPLOY from "../../Media/eye.svg";
-import CODE from "../../Media/code.svg";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const technologiesGamegeist = [
   { icon: POSTGRESQL, name: "Postgresql" },
@@ -52,7 +47,7 @@ const technologiesTCM = [
   { icon: REACT, name: "React" },
   { icon: REDUX, name: "Redux" },
   { icon: BOOTSTRAP, name: "Bootstrap" },
-  { icon: MATERIALUI, name: 'MaterialUI'}
+  { icon: MATERIALUI, name: "MaterialUI" },
 ];
 
 const technologiesHTMLTCM = technologiesTCM.map((technology) => (
@@ -65,84 +60,49 @@ const technologiesHTMLTCM = technologiesTCM.map((technology) => (
   />
 ));
 
-export default function Projects() {
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  }, []);
+const projects = [
+  {
+    name: "Gamegeist",
+    screenshot: GAMEGEIST,
+    description:
+      "Web application focused on video games using the rawg.io API. In this application, users can view a list of video games that they can sort and filter, and also create a new game. Users also have access to a detail page of each videogame where they can see the videogame rating, a description, where they can play it and more.",
+    technologies: technologiesHTMLGamegeist,
+    deployURL: "https://gamegeist.vercel.app/",
+    codeURL1: "https://github.com/FelipeSiravegna/PI-Videogames",
+    codeURL2: "",
+  },
+  {
+    name: "The corner movies",
+    screenshot: THECORNERMOVIES,
+    description:
+      "Web application focused on movies where users can view a list of movies that they can sort and filter. Additionally, they can see details of each movie that contain information about the cast, a synopsis, and where they can watch the movie trailer. Users can also follow other users, create lists, subscribe to a plan, and more.",
+    technologies: technologiesHTMLTCM,
+    deployURL: "https://thecornermovies.vercel.app/",
+    codeURL1: "https://github.com/FelipeSiravegna/ProyectoGrupal-Backend",
+    codeURL2: "https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend",
+  },
+];
 
+const projectsHTML = projects.map((project) => (
+  <Project
+    name={project.name}
+    screenshot={project.screenshot}
+    description={project.description}
+    technologies={project.technologies}
+    deployURL={project.deployURL}
+    codeURL1={project.codeURL1}
+    codeURL2={project.codeURL2}
+    key={project.name}
+  />
+));
+
+export default function Projects() {
   return (
     <section id="projects" className={style.container}>
       <div className={style.insideContainer}>
         <h2 className={style.projectsTitle}>Projects</h2>
         <div className={style.projectsContainer}>
-          <article data-aos="fade-right" className={style.projectBox}>
-            <h3 className={style.projectTitle}>Gamegeist</h3>
-            <img
-              className={style.projectScreenshot}
-              src={GAMEGEIST}
-              alt="Gamegeist"
-              aria-label="Gamegeist"
-            />
-            <div className={style.projectTechnologies}>
-              {technologiesHTMLGamegeist}
-            </div>
-            <p className={style.projectDescription}>
-              Web application focused on video games using the rawg.io API. In
-              this application, users can view a list of video games that they
-              can sort and filter, and also create a new game. Users also have
-              access to a detail page of each videogame where they can see the
-              videogame rating, a description, where they can play it and more.
-            </p>
-            <div className={style.links}>
-              <ProjectLink
-                url="https://gamegeist.vercel.app/"
-                image={DEPLOY}
-                alt="DEPLOY"
-              />
-              <ProjectLink
-                url="https://github.com/FelipeSiravegna/PI-Videogames"
-                image={CODE}
-                alt="CODE"
-              />
-            </div>
-          </article>
-          <article data-aos="fade-left" className={style.projectBox}>
-            <h3 className={style.projectTitle}>The corner movies</h3>
-            <img
-              className={style.projectScreenshot}
-              src={THECORNERMOVIES}
-              alt="The corner movies"
-              aria-label="The corner movies"
-            />
-            <div className={style.projectTechnologies}>
-              {technologiesHTMLTCM}
-            </div>
-            <p className={style.projectDescription}>
-              Web application focused on movies where users can view a list of
-              movies that they can sort and filter. Additionally, they can see
-              details of each movie that contain information about the cast, a
-              synopsis, and where they can watch the movie trailer. Users can
-              also follow other users, create lists, subscribe to a plan, and
-              more.
-            </p>
-            <div className={style.links}>
-              <ProjectLink
-                url="https://thecornermovies.vercel.app/"
-                image={DEPLOY}
-                alt="DEPLOY"
-              />
-              <ProjectLink
-                url="https://github.com/FelipeSiravegna/ProyectoGrupal-Backend"
-                image={CODE}
-                alt="CODE"
-              />
-              <ProjectLink
-                url="https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend"
-                image={CODE}
-                alt="CODE"
-              />
-            </div>
-          </article>
+          {projectsHTML}
         </div>
       </div>
     </section>
