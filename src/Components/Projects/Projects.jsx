@@ -101,9 +101,7 @@ export default function Projects() {
     <section id="projects" className={style.container}>
       <div className={style.insideContainer}>
         <h2 className={style.projectsTitle}>Projects</h2>
-        <div className={style.projectsContainer}>
-          {projectsHTML}
-        </div>
+        <div className={style.projectsContainer}>{projectsHTML}</div>
       </div>
     </section>
   );

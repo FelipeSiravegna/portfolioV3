@@ -12,8 +12,8 @@ import GIT from "../../Media/Skills/git.svg";
 import POSTMAN from "../../Media/Skills/postman.svg";
 import TRELLO from "../../Media/Skills/trello.svg";
 import NOTION from "../../Media/Skills/notion.svg";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const backendSkills = [
@@ -40,39 +40,59 @@ const tools = [
 
 const backendSkillsHTML = backendSkills.map((skill) => (
   <div className={style.skill} key={skill.name}>
-    <img src={skill.icon} alt={skill.name} aria-label={skill.name} className={style.skillLogo} />
+    <img
+      src={skill.icon}
+      alt={skill.name}
+      aria-label={skill.name}
+      className={style.skillLogo}
+    />
     <h3 className={style.skillName}>{skill.name}</h3>
   </div>
 ));
 
 const frontendSkillsHTML = frontendSkills.map((skill) => (
   <div className={style.skill} key={skill.name}>
-    <img src={skill.icon} alt={skill.name} aria-label={skill.name} className={style.skillLogo} />
+    <img
+      src={skill.icon}
+      alt={skill.name}
+      aria-label={skill.name}
+      className={style.skillLogo}
+    />
     <h3 className={style.skillName}>{skill.name}</h3>
   </div>
 ));
 
 const toolsHTML = tools.map((tool) => (
   <div className={style.skill} key={tool.name}>
-    <img src={tool.icon} alt={tool.name} aria-label={tool.name} className={style.skillLogo} />
+    <img
+      src={tool.icon}
+      alt={tool.name}
+      aria-label={tool.name}
+      className={style.skillLogo}
+    />
     <h3 className={style.skillName}>{tool.name}</h3>
   </div>
 ));
 
 export default function Skills() {
-
   useEffect(() => {
-    Aos.init({duration: 1500})
-  }, [])
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <section id="skills" className={style.container}>
       <div className={style.insideContainer}>
         <h2>Skills</h2>
         <div className={style.skillsContainer}>
-          <div data-aos="zoom-in" className={style.backendSkills}>{backendSkillsHTML}</div>
-          <div data-aos="zoom-in" className={style.frontendSkills}>{frontendSkillsHTML}</div>
-          <div data-aos="zoom-in" className={style.tools}>{toolsHTML}</div>
+          <div data-aos="zoom-in" className={style.backendSkills}>
+            {backendSkillsHTML}
+          </div>
+          <div data-aos="zoom-in" className={style.frontendSkills}>
+            {frontendSkillsHTML}
+          </div>
+          <div data-aos="zoom-in" className={style.tools}>
+            {toolsHTML}
+          </div>
         </div>
       </div>
     </section>
