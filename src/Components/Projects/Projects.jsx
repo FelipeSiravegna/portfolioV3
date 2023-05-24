@@ -2,6 +2,7 @@ import style from "./Projects.module.css";
 import Project from "../Project/Project";
 import GAMEGEIST from "../../Media/Projects/gamegeist.png";
 import THECORNERMOVIES from "../../Media/Projects/the corner movies.png";
+import CALCULATORAPP from '../../Media/Projects/calculator app.png';
 import POSTGRESQL from "../../Media/Skills/postgresql.svg";
 import SEQUELIZE from "../../Media/Skills/sequelize.svg";
 import NODEJS from "../../Media/Skills/nodejs.svg";
@@ -60,6 +61,21 @@ const technologiesHTMLTCM = technologiesTCM.map((technology) => (
   />
 ));
 
+const technologiesCalculatorApp = [
+  {icon: HTML, name: "HTML"},
+  {icon: CSS, name: "CSS"},
+  {icon: JAVASCRIPT, name: "JavaScript"}
+]
+
+const technologiesCalculatorAppHTML = technologiesCalculatorApp.map((technology) => (
+  <img
+    className={style.tech}
+    src={technology.icon}
+    alt={technology.name}
+    aria-label={technology.name}
+    key={technology.name}
+  />
+))
 const projects = [
   {
     name: "Gamegeist",
@@ -81,6 +97,15 @@ const projects = [
     codeURL1: "https://github.com/FelipeSiravegna/ProyectoGrupal-Backend",
     codeURL2: "https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend",
   },
+  {
+    name: "Calculator App",
+    screenshot: CALCULATORAPP,
+    description: "A simple calculator app.",
+    technologies: technologiesCalculatorAppHTML,
+    deployURL: "https://calculatorapp-siravegna.vercel.app/",
+    codeURL1: "https://github.com/FelipeSiravegna/CalculatorApp",
+    codeURL2: ""
+  }
 ];
 
 const projectsHTML = projects.map((project) => (
