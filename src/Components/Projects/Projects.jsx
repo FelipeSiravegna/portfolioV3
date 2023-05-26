@@ -61,21 +61,21 @@ const technologiesHTMLTCM = technologiesTCM.map((technology) => (
   />
 ));
 
-// const technologiesCalculatorApp = [
-//   {icon: HTML, name: "HTML"},
-//   {icon: CSS, name: "CSS"},
-//   {icon: JAVASCRIPT, name: "JavaScript"}
-// ]
+const technologiesCalculatorApp = [
+  {icon: HTML, name: "HTML"},
+  {icon: CSS, name: "CSS"},
+  {icon: JAVASCRIPT, name: "JavaScript"}
+]
 
-// const technologiesCalculatorAppHTML = technologiesCalculatorApp.map((technology) => (
-//   <img
-//     className={style.tech}
-//     src={technology.icon}
-//     alt={technology.name}
-//     aria-label={technology.name}
-//     key={technology.name}
-//   />
-// ))
+const technologiesCalculatorAppHTML = technologiesCalculatorApp.map((technology) => (
+  <img
+    className={style.tech}
+    src={technology.icon}
+    alt={technology.name}
+    aria-label={technology.name}
+    key={technology.name}
+  />
+))
 
 const projects = [
   {
@@ -98,15 +98,15 @@ const projects = [
     codeURL1: "https://github.com/FelipeSiravegna/ProyectoGrupal-Backend",
     codeURL2: "https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend",
   },
-  // {
-  //   name: "Calculator App",
-  //   screenshot: CALCULATORAPP,
-  //   description: "A simple calculator app.",
-  //   technologies: technologiesCalculatorAppHTML,
-  //   deployURL: "https://calculatorapp-siravegna.vercel.app/",
-  //   codeURL1: "https://github.com/FelipeSiravegna/CalculatorApp",
-  //   codeURL2: ""
-  // }
+  {
+    name: "Calculator App",
+    screenshot: CALCULATORAPP,
+    description: "A simple calculator app.",
+    technologies: technologiesCalculatorAppHTML,
+    deployURL: "https://calculatorapp-siravegna.vercel.app/",
+    codeURL1: "https://github.com/FelipeSiravegna/CalculatorApp",
+    codeURL2: ""
+  }
 ];
 
 const projectsHTML = projects.map((project) => (

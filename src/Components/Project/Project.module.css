@@ -37,10 +37,13 @@
   }
 
   .projectDescription {
+    display: flex;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 2vh;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
     font-size: 1.5vw;
+    justify-content: center;
   }
 
   .links {
@@ -49,7 +52,7 @@
     justify-content: space-around;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 1.5vh;
+    padding-bottom: 2vw;
   }
 }
 
@@ -91,9 +94,12 @@
   }
 
   .projectDescription {
+    display: flex;
+    justify-content: center;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 2vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-size: 2.75vh;
   }
 
@@ -103,7 +109,7 @@
     justify-content: space-around;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 1.5vh;
+    padding-bottom: 2vw;
   }
 }
 
@@ -153,9 +159,12 @@
   }
 
   .projectDescription {
+    display: flex;
+    justify-content: center;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 2vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-size: 2.5vw;
   }
 
@@ -165,7 +174,7 @@
     justify-content: space-around;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 1.5vw;
+    padding-bottom: 2vw;
   }
 }
 
@@ -215,9 +224,12 @@
   }
 
   .projectDescription {
+    display: flex;
+    justify-content: center;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 2vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-size: 3.5vw;
   }
 
@@ -227,6 +239,6 @@
     justify-content: space-around;
     width: 90%;
     margin-left: 5%;
-    padding-bottom: 1.5vw;
+    padding-bottom: 2vw;
   }
 }
