@@ -2,6 +2,7 @@ import style from "./Projects.module.css";
 import Project from "../Project/Project";
 import GAMEGEIST from "../../Media/Projects/gamegeist.png";
 import THECORNERMOVIES from "../../Media/Projects/the corner movies.png";
+import MOVIESAPP from '../../Media/Projects/movies app.png'
 import CALCULATORAPP from '../../Media/Projects/calculator app.png';
 import POSTGRESQL from "../../Media/Skills/postgresql.svg";
 import SEQUELIZE from "../../Media/Skills/sequelize.svg";
@@ -61,13 +62,13 @@ const technologiesHTMLTCM = technologiesTCM.map((technology) => (
   />
 ));
 
-const technologiesCalculatorApp = [
+const technologiesVanilla = [
   {icon: HTML, name: "HTML"},
   {icon: CSS, name: "CSS"},
   {icon: JAVASCRIPT, name: "JavaScript"}
 ]
 
-const technologiesCalculatorAppHTML = technologiesCalculatorApp.map((technology) => (
+const technologiesVanillaHTML = technologiesVanilla.map((technology) => (
   <img
     className={style.tech}
     src={technology.icon}
@@ -99,10 +100,19 @@ const projects = [
     codeURL2: "https://github.com/FelipeSiravegna/ProyectoGrupal-Frontend",
   },
   {
+    name: "Movies App",
+    screenshot: MOVIESAPP,
+    description: "Web application where users can view a list of recently released movies. They can also search for their favorite movies using a search function. Each movie includes a brief synopsis and its rating.",
+    technologies: technologiesVanillaHTML,
+    deployURL: "https://moviesapp-siravegna.vercel.app/",
+    codeURL1: "https://github.com/FelipeSiravegna/MoviesApp",
+    codeURL2: ""
+  },
+  {
     name: "Calculator App",
     screenshot: CALCULATORAPP,
     description: "A simple calculator app.",
-    technologies: technologiesCalculatorAppHTML,
+    technologies: technologiesVanillaHTML,
     deployURL: "https://calculatorapp-siravegna.vercel.app/",
     codeURL1: "https://github.com/FelipeSiravegna/CalculatorApp",
     codeURL2: ""
